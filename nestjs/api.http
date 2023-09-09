@@ -1,0 +1,30 @@
+GET http://localhost:3000
+
+
+###
+GET http://localhost:3000/routes
+###
+GET http://localhost:3000/routes/EkZBdi4gR292LiBWYWxhZGFyZXMsIDEwMzAgLSBTYW50byBBZm9uc28sIEJldGltIC0gTUcsIDMyNjIzLTY5MCwgQnJhc2lsIjESLwoUChIJTbH1swDdpgARYOtQ1DjwovIQhggqFAoSCfmsiD4H3aYAEdRlj37c
+###
+POST http://localhost:3000/routes
+Content-Type: application/json
+
+{
+    "name": "route test 1",
+    "source_id": "EkZBdi4gR292LiBWYWxhZGFyZXMsIDEwMzAgLSBTYW50byBBZm9uc28sIEJldGltIC0gTUcsIDMyNjIzLTY5MCwgQnJhc2lsIjESLwoUChIJTbH1swDdpgARYOtQ1DjwovIQhggqFAoSCfmsiD4H3aYAEdRlj37c-uzz",
+    "destination_id": "ChIJ0TcVYiD0k5QRuYsHntk1pL0"
+}
+
+### Coisa do Mapa
+
+###Pegar o place_id
+
+GET http://localhost:3000/places?text=rua victório spir, 141
+
+
+### Pegar direcoes enbtre dois pontos
+
+GET http://localhost:3000/directions?originId=EkZBdi4gR292LiBWYWxhZGFyZXMsIDEwMzAgLSBTYW50byBBZm9uc28sIEJldGltIC0gTUcsIDMyNjIzLTY5MCwgQnJhc2lsIjESLwoUChIJTbH1swDdpgARYOtQ1DjwovIQhggqFAoSCfmsiD4H3aYAEdRlj37c-uzz&destinationId=ChIJ0TcVYiD0k5QRuYsHntk1pL0
+
+###
+GET http://localhost:3000/routes/64eab94eb55ad891ad433203
